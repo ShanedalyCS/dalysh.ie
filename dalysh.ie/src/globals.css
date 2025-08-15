@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Pacifico&family=Quicksand:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+
+     font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .landing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     min-height: 100vh;
     min-width: 100vw;
     background-image: url("./assets/custom.png");
@@ -11,5 +22,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* 
+@keyframes bck 
+{
+    0%{background-position: right;}
+    100%{background-position: left;}
+}
+ */
+
+.hello
+{
+    color: white;
 }
 

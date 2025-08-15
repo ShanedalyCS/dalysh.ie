@@ -15,7 +15,7 @@ export default function Welcome() {
  
     <section className='hero'>
         <div className="landing">
-           <img src="../assets/custom.png" alt='' className='landing-bg'/>
+        <div className="hello"><h1>H E L L O</h1></div>
         </div>
     </section>
 
