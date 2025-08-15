@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url("./assets/custom.png");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
