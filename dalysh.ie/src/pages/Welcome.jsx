@@ -11,12 +11,19 @@ export default function Welcome() {
       <section className="hero">
         <div className="landing">
           <div className="hello">
-             <Typewriter
-              words={["HELLO", "I'm Shane.", ":)"]}
-              typingSpeed={200}
-              deleteSpeed={100}
-              holdTime={100}
-              loop={true}
+            {/* <span>{"We're born 🌞 to "}</span> */}
+        <Typewriter
+          text={[
+            "H e l l o !",
+            "I'm Shane.",
+            ":)",
+            
+          ]}
+          speed={70}
+          className="text-yellow-500"
+          waitTime={1500}
+          deleteSpeed={40}
+          cursorChar={"_"}
             />
           </div>
         </div>
