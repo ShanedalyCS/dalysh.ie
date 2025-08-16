@@ -1,26 +1,33 @@
-import React from 'react'
-import { useState } from 'react'
-import '../assets/custom.png';
-import Navbar from '../components/Navbar.jsx'
-import '../App.css'
-import '../globals.css'
-
+import React from "react";
+import Navbar from "../components/Navbar.jsx";
+import Typewriter from "../components/Typewriter.jsx";
+import "../App.css";
+import "../globals.css";
 
 export default function Welcome() {
-
-
-
   return (
     <>
- 
-    <section className='hero'>
+      <Navbar />
+      <section className="hero">
         <div className="landing">
-        <div className="hello"><h1>H E L L O</h1></div>
+          <div className="hello">
+             <Typewriter
+              words={["HELLO", "I'm Shane.", ":)"]}
+              typingSpeed={200}
+              deleteSpeed={100}
+              holdTime={100}
+              loop={true}
+            />
+          </div>
         </div>
-    </section>
 
-    
+        <div className="welcome-content">
+          <h1>
+            I am{" "}
+           
+          </h1>
+        </div>
+      </section>
     </>
-    
-  )
+  );
 }

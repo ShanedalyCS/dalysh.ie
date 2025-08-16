@@ -22,6 +22,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    font-size: 150%;
 }
 
 /* 
@@ -35,5 +37,28 @@
 .hello
 {
     color: white;
+    font-size: 150%;
+}
+
+
+
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.12em solid rgba(255,255,255,0.85);
+  animation: caret-blink 1s steps(1, end) infinite;
+}
+
+/* Blink caret */
+@keyframes caret-blink {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: rgba(255,255,255,0.85); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .typewriter { animation: none; border-right: none; }
 }
 
