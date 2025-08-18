@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { motion, type Variants } from "framer-motion";
+import '../globals.css'
 
 interface TypewriterProps {
   text: string | string[];

@@ -24,7 +24,7 @@ export default function Welcome() {
             
           ]}
           speed={70}
-          className="text-yellow-500"
+          className="text-white-500"
           waitTime={1500}
           deleteSpeed={40}
           cursorChar={"_"}
@@ -32,47 +32,40 @@ export default function Welcome() {
           </div>
         </div>
 
-        <div className="welcome-content">
-          <h1>
-             <LayoutGroup>
-      <motion.p className="flex whitespace-pre text-4xl" layout={true}>
-        <motion.span
-          className="pt-0.5 sm:pt-1 md:pt-2"
-          layout={true}
-          transition={{ type: "spring", damping: 30, stiffness: 400 }}
-        >
-          Cuicui is{" "}
-        </motion.span>
+       <div className="welcome-content grid grid-rows-[auto,1fr,auto] h-[600px] place-items-center text-center px-6 pt-8 pb-8">
+  {/* top */}
+  <h2 className="text-lg font-semibold">A little bit about me...</h2>
+
+  {/* middle */}
+  <div className="row-start-2 flex items-center justify-center">
+    <LayoutGroup>
+      <motion.p className="flex whitespace-pre text-4xl font-bold" layout>
+        <motion.span layout>I'm a </motion.span>
         <WordListSwap
-          texts={[
-            "Amazing!",
-            "fancy ✽",
-            "optimized",
-            "fast",
-            "fun",
-            "creative",
-            "🕶️🕶️🕶️",
-          ]}
-          mainClassName="text-white px-2 sm:px-2 md:px-3 bg-violet-600 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-          staggerFrom={"last"}
+          texts={["Software Engineer","VR Enthusiast","AI Follower","Full Stack Developer","Computer Science Student"]}
+          className="text-white px-3 bg-[#6259ff] overflow-hidden py-1 rounded-lg"
+          staggerFrom="last"
           initial={{ y: "100%" }}
           animate={{ y: 0 }}
           exit={{ y: "-120%" }}
           staggerDuration={0.025}
-          splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+          splitLevelClassName="overflow-hidden pb-1"
           transition={{ type: "spring", damping: 30, stiffness: 400 }}
           rotationInterval={2000}
         />
       </motion.p>
     </LayoutGroup>
-          </h1>
+  </div>
 
-
-          <div className="p-6 bg-violet-600 text-white rounded-lg">
-  If this is purple with white text, Tailwind is working.
+  {/* bottom */}
+  <p className="row-start-3 max-w-xl mt-2">
+    I'm currently in my third year of Computer Science and Software Engineering at
+    Maynooth University. I'm very passionate about VR, AI and Software Engineering
+    in general. In my spare time I like to go to the gym, build computers and play
+    video games.
+  </p>
 </div>
 
-        </div>
       </section>
     </>
   );
