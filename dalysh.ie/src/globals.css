@@ -17,6 +17,46 @@
     font-style: normal;
 }
 
+.nav {
+  position: fixed;
+  top: 16px;                 /* margin from top */
+  left: 50%;                 /* center horizontally */
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+.nav-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;                 /* space between links */
+  padding: 8px 12px;
+  border-radius: 9999px;     /* pill */
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+  backdrop-filter: blur(14px);
+}
+
+.nav-link {
+  padding: 6px 12px;
+  border-radius: 9999px;     /* pill buttons */
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  transition: background-color .25s ease, color .25s ease;
+}
+
+.nav-link.active {           /* only the active page is lit */
+  background: #6259ff;
+  color: #fff;
+}
+
+.nav-link:not(.active):hover {
+  background: rgba(255,255,255,.25);
+}
+
+/* optional: keeps content from hiding under the fixed nav */
+.nav-spacer { height: 56px; }
+
 .landing{
     display: flex;
     align-items: center;

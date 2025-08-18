@@ -10,11 +10,11 @@ import "../globals.css";
 export default function Welcome() {
   return (
     <>
-      <Navbar />
+      
       <section className="hero">
         <div className="landing">
           <div className="hello">
-            {/* <span>{"We're born 🌞 to "}</span> */}
+            {/* <span>{"text before typewriter "}</span> */}
         <Typewriter
           text={[
             "H e l l o !",
@@ -57,6 +57,7 @@ export default function Welcome() {
           <WordListSwap
             texts={[
               "Software Engineer",
+              "Freelance Web Developer",
               "VR Enthusiast",
               "AI Follower",
               "Full Stack Developer",
