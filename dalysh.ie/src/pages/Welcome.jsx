@@ -17,7 +17,7 @@ export default function Welcome() {
             {/* <span>{"text before typewriter "}</span> */}
         <Typewriter
           text={[
-            "H e l l o !",
+            "H E L L O !",
             "I'm Shane.",
             ":)",
             "This site is actively being updated and worked on!"
@@ -64,7 +64,7 @@ export default function Welcome() {
               "CSSE Student",
               "Experienced Manager",
               "People Person",
-              
+
             ]}
             className="inline-flex items-center
                        max-w-full

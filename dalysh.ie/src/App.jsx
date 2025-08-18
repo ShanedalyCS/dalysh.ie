@@ -9,6 +9,7 @@ import Welcome from './pages/Welcome.jsx';
 import Projects from './pages/Projects.jsx'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ProjectPage from './components/ProjectPage.jsx'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route index element={<Welcome/>}/>
           <Route path='/projects' element={<Projects/>}/>
+          <Route path='/projects/therapist-crm' element={<ProjectPage/>}/>
         </Routes>
       {/* </BrowserRouter> */}
     </>
