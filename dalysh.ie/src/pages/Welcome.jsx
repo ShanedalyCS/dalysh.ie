@@ -61,7 +61,10 @@ export default function Welcome() {
               "VR Enthusiast",
               "AI Follower",
               "Full Stack Developer",
-              "Computer Science Student",
+              "CSSE Student",
+              "Experienced Manager",
+              "People Person",
+              
             ]}
             className="inline-flex items-center
                        max-w-full
