@@ -155,7 +155,7 @@ export default function ProjectPage() {
                     rel="noreferrer"
                     className="inline-block rounded-full bg-indigo-600 text-white px-5 py-2 hover:bg-indigo-700 transition"
                   >
-                    Live Demo
+                    Live Link
                   </a>
                 )}
                 {links?.repo && (
