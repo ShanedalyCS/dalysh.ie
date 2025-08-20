@@ -73,6 +73,22 @@
     font-size: 150%;
 }
 
+.landingP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40vh;
+    min-width: 100vw;
+    background-image: url("./assets/orange.png");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-size: 150%;
+}
+
 /* 
 @keyframes bck 
 {

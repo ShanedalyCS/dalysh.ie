@@ -59,8 +59,8 @@ export default function Projects(){
     return(
         <>
       
-      <section className="hero">
-        <div className="landing">
+      <section className="heroP">
+        <div className="landingP">
           <div className="hello">
             {/* <span>{"text before typewriter "}</span> */}
         <Typewriter
