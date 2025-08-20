@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 import Navbar from './components/Navbar.jsx';
 import Welcome from './pages/Welcome.jsx';
 import Projects from './pages/Projects.jsx'
+import './data/projects.js'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ProjectPage from './components/ProjectPage.jsx'
@@ -19,9 +20,9 @@ function App() {
       <Navbar/>
       {/* <BrowserRouter> */}
         <Routes>
-          <Route index element={<Welcome/>}/>
+          <Route path='/' element={<Welcome/>}/>
           <Route path='/projects' element={<Projects/>}/>
-          <Route path='/projects/therapist-crm' element={<ProjectPage/>}/>
+          <Route path="/projects/:slug" element={<ProjectPage />} />
         </Routes>
       {/* </BrowserRouter> */}
     </>
