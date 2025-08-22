@@ -7,6 +7,11 @@ import AMAIN from "../assets/ProjectPageImages/AmyMain.png";
 import NMAIN from "../assets/ProjectPageImages/NickyMain.png";
 import PlatformMAIN from "../assets/ProjectPageImages/PlatformMain.png";
 
+import TMAIN from '../assets/ProjectPageImages/TeeTrackMain.png'
+import TherapyMAIN from '../assets/ProjectPageImages/TherapyMain.png'
+import WeatherMAIN from '../assets/ProjectPageImages/WeatherMain.png'
+
+
 // this site, food waste tracker, amy mullhall, Nicky Brennan, Real Estate Platform, Therapist Manager, 
 
 const projects = [
@@ -43,6 +48,14 @@ const projects = [
     slug: "nicky",
   },
   {
+    title: "Tee-Track",
+    tools: ["Python", "Django", "Javascript", "MongoDB", "POSTMAN"],
+    description: "Platform for users to track golf statistics on individual holes, courses and in general.",
+    status: "Paused",
+    imageUrl: TMAIN,
+    slug: "tee-track",
+  },
+  {
     title: "Real Estate Platform",
     tools: ["Python","React", "DJANGO REST", "Javascript", "MongoDB", "POSTMAN"],
     description: "Platform for users to post real estate for sale/rent in direct competition with Irelands largest real estate platforms.",
@@ -51,11 +64,19 @@ const projects = [
     slug: "real",
   },
   {
+    title: "Weather App",
+    tools: ["HTML","CSS", "Javascript"],
+    description: "A simple website that fetches data from a JSON file and displays it to a user, given the simplicity of the site I decided to put a lot of effort into designing the UI and making it looks as nice as possible.",
+    status: "Completed",
+    imageUrl: WeatherMAIN,
+    slug: "weather",
+  },
+  {
     title: "Therapist CRM",
     tools: ["React", "Express", "MySQL"],
     description: "Dashboard + CRUD app for therapists, clients, and sessions.",
     status: "Completed",
-    imageUrl: PlatformMAIN,
+    imageUrl: TherapyMAIN,
     slug: "therapist-crm",
   }
 

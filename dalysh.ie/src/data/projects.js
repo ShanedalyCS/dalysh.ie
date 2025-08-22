@@ -14,6 +14,19 @@ import ASUB2 from "../assets/ProjectPageImages/AmySub2.png";
 import NMAIN from "../assets/ProjectPageImages/NickyMain.png";
 import PlatformMAIN from "../assets/ProjectPageImages/PlatformMain.png";
 
+import TMAIN from '../assets/ProjectPageImages/TeeTrackMain.png'
+
+import TherapyMAIN from '../assets/ProjectPageImages/TherapyMain.png'
+
+import WeatherMAIN from '../assets/ProjectPageImages/WeatherMain.png'
+import WeatherSUB1 from '../assets/ProjectPageImages/WeatherSub1.png'
+import WeatherSUB2 from '../assets/ProjectPageImages/WeatherSub2.png'
+
+
+
+
+
+
 export const projects = [
   {
     // Portfolio
@@ -136,7 +149,7 @@ export const projects = [
         heading: "Overview",
         paragraphs: [
           "Foundations and REST endpoints tested with Postman.",
-          "Repo is private while redesigning the architecture.",
+          "Note: The repo has been made private while redesigning the architecture.",
         ],
       },
     ],
@@ -153,7 +166,27 @@ export const projects = [
     tools: ["React", "NodeJS", "SimpleAuth", "CSS", "phpMyAdmin", "SQL"],
     summary:
       "A platform for therapists to manage clients, sessions, and therapists.",
-    heroImage: PlatformMAIN,
+    heroImage: TherapyMAIN,
+    body: [
+      {
+        heading: "Overview",
+        paragraphs: ["Allows users to make an account, add, remove, update or delete (CRUD) therapists, clients and sessions. Fully implmented auth and CRUD functionality. Lacking styling but the core functionality is completely production ready. Completed as part of Intro to Web."],
+      },
+    ],
+    gallery: [],
+    links: { repo: "https://github.com/ShanedalyCS/TherapyManager" },
+    startedAt: "2025",
+  },
+
+  {
+    // Therapist
+    slug: "tee-track",
+    title: "Tee-Track",
+    status: "Paused",
+    tools: ["Python", "Django", "Javascript", "MongoDB", "POSTMAN"],
+    summary:
+      "Platform for users to track golf statistics on individual holes, courses and in general.",
+    heroImage: TMAIN,
     body: [
       {
         heading: "Overview",
@@ -162,6 +195,26 @@ export const projects = [
     ],
     gallery: [],
     links: { repo: "https://github.com/ShanedalyCS/TherapyManager" },
-    startedAt: "2025",
+    startedAt: "2024",
+  },
+
+  {
+    // Weather
+    slug: "weather",
+    title: "Weather App",
+    status: "Completed",
+    tools: ["HTML", "CSS", "Javascript"],
+    summary:
+      "A simple website that fetches data from a JSON file and displays it to a user, given the simplicity of the site I decided to put a lot of effort into designing the UI and making it looks as nice as possible.",
+    heroImage: WeatherMAIN,
+    body: [
+      {
+        heading: "Overview",
+        paragraphs: ["Completed as part of Intro to Web."],
+      },
+    ],
+    gallery: [WeatherSUB1, WeatherSUB2],
+    links: { demo:"https://deft-tanuki-334b3b.netlify.app/",repo: "https://github.com/ShanedalyCS/WeatherApp" },
+    startedAt: "2024",
   },
 ];
