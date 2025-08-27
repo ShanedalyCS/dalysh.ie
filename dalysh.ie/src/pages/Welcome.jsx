@@ -19,8 +19,8 @@ export default function Welcome() {
           text={[
             "H E L L O !",
             "I'm Shane.",
-            ":)",
-            "This site is actively being updated and worked on!"
+            ":)"
+            
             
           ]}
           speed={70}
